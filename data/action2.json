@@ -1,0 +1,29 @@
+﻿{
+  "meta": {
+    "A": "",
+    "B": ["", ""]
+  },
+  "actions": {
+    "001": {
+      "page.locator": "#username",
+      "fill": "200020"
+    },
+    "002": {
+      "page.locator": "#password",
+      "fill": "234sdvksldrk"
+    },
+    "003": {
+      "page.get_by_role": "#button",
+      "click": ""
+    },
+    "004": {
+      "code": "qasrgagsdvasdv"
+    },
+    "005": {
+      "if": "sdfasdvasdf"
+    },
+    "006": {
+      "value": "sdfasdvasdf"
+    }
+  }
+}

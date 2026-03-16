@@ -1,0 +1,65 @@
+{
+  "settings": {
+    "headless": false,
+    "timeout_ms": 10000,
+    "start_url": ""
+  },
+  "steps": [
+    {
+      "action": "open",
+      "selector_mode": "none",
+      "selector": "",
+      "value": "https://example.com/login",
+      "note": "Launch browser and open the first page",
+      "required": true
+    },
+    {
+      "action": "wait",
+      "selector_mode": "placeholder",
+      "selector": "Username",
+      "value": "",
+      "note": "Wait until username input is visible",
+      "required": true
+    },
+    {
+      "action": "fill",
+      "selector_mode": "placeholder",
+      "selector": "Username",
+      "value": "demo-user",
+      "note": "Fill username",
+      "required": true
+    },
+    {
+      "action": "fill",
+      "selector_mode": "placeholder",
+      "selector": "Password",
+      "value": "demo-password",
+      "note": "Fill password",
+      "required": true
+    },
+    {
+      "action": "click",
+      "selector_mode": "role",
+      "selector": "button",
+      "value": "Sign in",
+      "note": "Click sign in button",
+      "required": true
+    },
+    {
+      "action": "check",
+      "selector_mode": "text",
+      "selector": "Dashboard",
+      "value": "",
+      "note": "Confirm next page loaded",
+      "required": false
+    },
+    {
+      "action": "close",
+      "selector_mode": "none",
+      "selector": "",
+      "value": "",
+      "note": "Close browser resources cleanly",
+      "required": true
+    }
+  ]
+}
